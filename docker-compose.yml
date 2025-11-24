@@ -3,18 +3,17 @@ version: '3.9'
 services:
   mysql:
     image: mysql:8.0
-    container_name: mysql_container
+    container_name: bd-trabalho-final
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: meubanco
-      MYSQL_USER: usuario
-      MYSQL_PASSWORD: senha123
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: doses_pni
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user1234
     ports:
       - "3310:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      # Caso queira inicializar com um script SQL:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
 volumes:

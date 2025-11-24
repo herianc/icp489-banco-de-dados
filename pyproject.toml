@@ -1,0 +1,16 @@
+[project]
+name = "icp489-banco-de-dados"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "folium>=0.20.0",
+    "matplotlib>=3.10.7",
+    "mysql-connector-python>=9.5.0",
+    "pandas>=2.3.3",
+    "plotly>=6.5.0",
+    "streamlit>=1.51.0",
+    "streamlit-folium>=0.25.3",
+    "typing-extensions>=4.15.0",
+]
